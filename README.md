@@ -1,10 +1,10 @@
 dotinstall-grunt
 ================
 
-## 1. グローバル環境構築
+## 1. グローバル環境
 
 グローバルにgruntコマンドをインストールする。<br>
-lessの自動コンパイルも行うので入れてなければインストール。
+今回のチュートリアルでlessの自動コンパイルも行うので入れてなければインストール。
 
 <pre>
 npm install -g grunt-cli
@@ -17,9 +17,9 @@ package.jsonのひな形を作る。
 
 <pre>
 npm init
-<pre>
+</pre>
 
-gruntインストール。package.jsonに追記する場合は
+gruntインストール。package.jsonに新たに追記する場合は
 
 <pre>
 npm install grunt --save-dev
@@ -64,12 +64,12 @@ module.exports = function(grunt){
 };
 </pre>
 
+例えば[こんな感じの](https://github.com/Mrk1869/dotinstall-grunt/blob/master/Gruntfile.js)Gruntfile.jsで下記の機能が使える。
+
 * less: lessコンパイル
 * csslint: css構文チェック
 * cssmin: css圧縮
 * watch: ファイル更新検知
 * connect: 簡易サーバー(+livereload)
-
-の設定に関しては[こちら](https://github.com/Mrk1869/dotinstall-grunt/blob/master/Gruntfile.js)を参考。
 
 livereloadにはブラウザ拡張(Chromeだと[ここから](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei))の事前インストールが必要
